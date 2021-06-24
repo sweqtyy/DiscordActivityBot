@@ -100,4 +100,4 @@ client.on("message", async message => {
     }
 });
 
-client.login("NzUxMTk1ODM0NDY4NTMyMjk2.X1Fjow.2j6LWifffdqw9iN-bIMYig-rxpQ");
+client.login(process.env.TOKEN);
