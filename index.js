@@ -34,7 +34,7 @@ client.on("message", async message => {
     const args = message.content.slice(PREFIX.length).trim().split(" ");
     const cmd = args.shift().toLowerCase();
 
-    if (cmd === "ping") return message.channel.send(`Pong! \`${client.ws.ping}ms\``);
+    if (cmd === "ping") return message.channel.send(`:ping_pong: Pong! \`${client.ws.ping}ms\``);
 
     if (cmd === "yttogether") {
         const channel = message.mentions.channels.first() || message.guild.channels.cache.get(args[0]);
