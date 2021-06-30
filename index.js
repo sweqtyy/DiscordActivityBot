@@ -2,7 +2,7 @@
 const { Client } = require("discord.js");
 const fetch = require("node-fetch");
 const client = new Client();
-const PREFIX = "a!";
+const PREFIX = "-";
 
 const ACTIVITIES = {
     "poker": {
