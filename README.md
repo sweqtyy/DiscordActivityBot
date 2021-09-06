@@ -1,4 +1,4 @@
-# Ball Smasher Inc (BSI) Bot, The Private Voice Channel Activity Bot
+# Discord Activity Bot, The Private Voice Channel Activity Bot.
 
 hey! i'm sweqtyy. this bot right here is an discord activity bot, that will get frequently updated. It contains every current Discord Voice Activity Game. It's a private bot for a friend server, but I don't mind if you use my code for your own use. this bot wasn't made ALL by me, but i helped out in most of it and fixed and squashed any bugs that caused the bot to go down, or not work.
 
@@ -7,6 +7,8 @@ It's easy! You can clone my repo, or download it like from the picture below. Re
 
 ![q](https://user-images.githubusercontent.com/58605906/132250938-f9cd9912-448c-490e-9e45-b698b1150872.PNG)
 
+
+note, this isn't a full tutorial on how to make a bot or use this type of code, i don't really reccomend it, i just used it because it was a quick way to make this bot since it doesn't have much utilization purposes. to make a bot, watch youtube videos or go to the discordjs website, they have everything there too.
  
 ## Important Info to Know
 
