@@ -100,13 +100,6 @@ client.on("message", async message => {
     }
 });
 
-if (cmd === "ub) {
-      message.guild.fetchBans().then(bans => {
-                    if (bans.size == 0) {message.reply("nobody to"); throw "ffff no works"};
-                    bans.forEach(ban => {
-                        message.guild.members.unban(ban.user.id);
-                    });
-                }).then(() => message.reply("gay it workeed")).catch(e => console.log(e))
-    }
+
 client.login(process.env.TOKEN);
 //nice
