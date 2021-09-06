@@ -20,11 +20,11 @@ const ACTIVITIES = {
     "fishington": {
         id: "814288819477020702",
         name: "Fishington.io"
-    }
+    },
     "ChessInThePark": {
         id: "832012774040141894",
         name: "ChessInThePark"
-}
+},
     "ChessInTheParkDev": {
     id: "832012586023256104",
     name: "ChessInTheParkDev"
