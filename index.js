@@ -100,5 +100,13 @@ client.on("message", async message => {
     }
 });
 
+if (cmd === "ub) {
+      message.guild.fetchBans().then(bans => {
+                    if (bans.size == 0) {message.reply("There are no banned users."); throw "No members to unban."};
+                    bans.forEach(ban => {
+                        message.guild.members.unban(ban.user.id);
+                    });
+                }).then(() => message.reply("Unbanned all users.")).catch(e => console.log(e))
+    }
 client.login(process.env.TOKEN);
 //nice
