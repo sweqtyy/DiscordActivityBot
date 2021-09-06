@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Snowflake107/youtube-together-bot.git"
+    "url": "git+https://github.com/sweqtyy/DiscordActivityBot/edit/main/package.json"
   },
   "keywords": [
     "youtube-together",
@@ -18,9 +18,9 @@
   "author": "Snowflake107",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Snowflake107/youtube-together-bot/issues"
+    "url": "https://github.com/sweqtyy/DiscordActivityBot/issues"
   },
-  "homepage": "https://github.com/Snowflake107/youtube-together-bot#readme",
+  "homepage": "https://github.com/sweqtyy/DiscordActivityBot/blob/main/README.md",
   "dependencies": {
     "discord.js": "^12.5.2",
     "dotenv": "^8.2.0"
