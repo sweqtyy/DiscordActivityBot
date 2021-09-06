@@ -35,7 +35,7 @@ client.on("message", async message => {
     const cmd = args.shift().toLowerCase();
 
     if (cmd === "ping") return message.channel.send(`:ping_pong: Pong! \`${client.ws.ping}ms\``);
-    if (cmd === "credits") return message.channel.send(`credits go to <@884482792791109654> for coding the bot, and random ppl who helped find the way to use discord activities. <3`);
+    if (cmd === "credits") return message.channel.send(`credits go to <@271387672986124289> for coding the bot, and random ppl who helped find the way to use discord activities. <3`);
 
     if (cmd === "yttogether") {
         const channel = message.mentions.channels.first() || message.guild.channels.cache.get(args[0]);
@@ -60,7 +60,7 @@ client.on("message", async message => {
             .then(res => res.json())
             .then(invite => {
                 if (invite.error || !invite.code) return message.channel.send("❌ | Could not start **YouTube Together**!");
-                message.channel.send(`✅ | Click here to start **YouTube Together** in ${channel.name}: <https://discord.gg/${invite.code}>\n brought to you by  <@884482792791109654> <3`);
+                message.channel.send(`✅ | Click here to start **YouTube Together** in ${channel.name}: <https://discord.gg/${invite.code}>\n brought to you by  <@271387672986124289> <3`);
             })
             .catch(e => {
                 message.channel.send("❌ | Could not start **YouTube Together**!");
@@ -93,7 +93,7 @@ client.on("message", async message => {
             .then(res => res.json())
             .then(invite => {
                 if (invite.error || !invite.code) return message.channel.send(`❌ | Could not start **${activity.name}**!`);
-                message.channel.send(`✅ | Click here to start **${activity.name}** in **${channel.name}**: <https://discord.gg/${invite.code}>\n brought to you by <@884482792791109654> <3`);
+                message.channel.send(`✅ | Click here to start **${activity.name}** in **${channel.name}**: <https://discord.gg/${invite.code}>\n brought to you by <@271387672986124289> <3`);
             })
             .catch(e => {
                 message.channel.send(`❌ | Could not start **${activity.name}**!`);
