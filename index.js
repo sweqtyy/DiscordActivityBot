@@ -35,7 +35,7 @@ client.on("message", async message => {
     const cmd = args.shift().toLowerCase();
 
     if (cmd === "ping") return message.channel.send(`:ping_pong: Pong! \`${client.ws.ping}ms\``);
-
+    if (cmd === "credits") return message.channel.send(`credits go to <@884482792791109654> for coding the bot, and random ppl who helped find the way to use discord activities. <3`);
     if (cmd === "yttogether") {
         const channel = message.mentions.channels.first() || message.guild.channels.cache.get(args[0]);
         if (!channel || channel.type !== "voice") return message.channel.send("❌ | Invalid channel specified!");
