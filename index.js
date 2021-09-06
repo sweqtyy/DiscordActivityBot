@@ -36,10 +36,11 @@ client.on("message", async message => {
 
     if (cmd === "ping") return message.channel.send(`:ping_pong: Pong! \`${client.ws.ping}ms\``);
     if (cmd === "credits") return message.channel.send(`credits go to <@884482792791109654> for coding the bot, and random ppl who helped find the way to use discord activities. <3`);
+
     if (cmd === "yttogether") {
         const channel = message.mentions.channels.first() || message.guild.channels.cache.get(args[0]);
         if (!channel || channel.type !== "voice") return message.channel.send("❌ | Invalid channel specified!");
-        if (!channel.permissionsFor(message.guild.me).has("CREATE_INSTANT_INVITE")) return message.channel.send("❌ | I need `CREATE_INSTANT_INVITE` permission to work properly!");
+        if (!channel.permissionsFor(message.guild.me).has("CREATE_INSTANT_INVITE")) return message.channel.send("❌ | I need `CREATE INSTANT INVITE` permission to work properly!");
 
         fetch(`https://discord.com/api/v8/channels/${channel.id}/invites`, {
             method: "POST",
@@ -59,7 +60,7 @@ client.on("message", async message => {
             .then(res => res.json())
             .then(invite => {
                 if (invite.error || !invite.code) return message.channel.send("❌ | Could not start **YouTube Together**!");
-                message.channel.send(`✅ | Click here to start **YouTube Together** in ${channel.name}: <https://discord.gg/${invite.code}>`);
+                message.channel.send(`✅ | Click here to start **YouTube Together** in ${channel.name}: <https://discord.gg/${invite.code}>\n brought to you by  <@884482792791109654> <3`);
             })
             .catch(e => {
                 message.channel.send("❌ | Could not start **YouTube Together**!");
@@ -70,7 +71,7 @@ client.on("message", async message => {
     if (cmd === "activity") {
         const channel = message.guild.channels.cache.get(args[0]);
         if (!channel || channel.type !== "voice") return message.channel.send("❌ | Invalid channel specified!");
-        if (!channel.permissionsFor(message.guild.me).has("CREATE_INSTANT_INVITE")) return message.channel.send("❌ | I need `CREATE_INSTANT_INVITE` permission");
+        if (!channel.permissionsFor(message.guild.me).has("CREATE_INSTANT_INVITE")) return message.channel.send("❌ | I need `CREATE INSTANT_INVITE` permission");
         const activity = ACTIVITIES[args[1] ? args[1].toLowerCase() : null];
         if (!activity) return message.channel.send(`❌ | Correct formats:\n${Object.keys(ACTIVITIES).map(m => `- **${PREFIX}activity <Channel_ID> ${m}**`).join("\n")}`);
 
@@ -92,7 +93,7 @@ client.on("message", async message => {
             .then(res => res.json())
             .then(invite => {
                 if (invite.error || !invite.code) return message.channel.send(`❌ | Could not start **${activity.name}**!`);
-                message.channel.send(`✅ | Click here to start **${activity.name}** in **${channel.name}**: <https://discord.gg/${invite.code}>`);
+                message.channel.send(`✅ | Click here to start **${activity.name}** in **${channel.name}**: <https://discord.gg/${invite.code}>\n brought to you by <@884482792791109654> <3`);
             })
             .catch(e => {
                 message.channel.send(`❌ | Could not start **${activity.name}**!`);
