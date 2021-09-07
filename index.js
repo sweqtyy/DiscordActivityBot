@@ -110,10 +110,6 @@ client.on("message", async message => {
     }
 });
 //I help in ${client.guilds.cache.size} servers! || Made with love by sweqtyy#0001 <3
-client.on("ready", () => 
-setInterval(function() {
-          client.user.setActivity(`I help in ${client.guilds.cache.size} servers! || Made with love by sweqtyy#0001 <3`, { type: 'WATCHING' });
-}), 5000);
-);
+client.on("ready", () => client.user.setActivity(`I help in ${client.guilds.cache.size} servers! || Made with love by sweqtyy#0001 <3`, { type: 'WATCHING' }))
 client.login(process.env.TOKEN);
 //nice
