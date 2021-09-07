@@ -1,12 +1,12 @@
 //nicec
-const { Client } = require("discord.js");
+const { Client } = require("discord.js"); //Allows me to not have files on files for discordjs
 const fetch = require("node-fetch");
 const client = new Client();
 const PREFIX = "-";
 
 const ACTIVITIES = {
     "poker": {
-        id: "755827207812677713",
+        id: "755827207812677713", 
         name: "Poker Night"
     },
     "betrayal": {
@@ -32,7 +32,7 @@ const ACTIVITIES = {
 };
 
 
-client.on("ready", () => console.log("Bot is online!"));
+client.on("ready", () => console.log("Discord Activity Bot by sweqtyy#0001 is now online, and ready for use. "));
 client.on("warn", console.warn);
 client.on("error", console.error);
 
@@ -110,6 +110,6 @@ client.on("message", async message => {
     }
 });
 
-
+client.setActivity(`Made with love by sweqtyy#0001. || I help in ${client.guilds.cache.size} servers!`);
 client.login(process.env.TOKEN);
 //nice
