@@ -109,7 +109,7 @@ client.on("message", async message => {
             })
     }
 });
-
+client.user.setPresence({ activity: { name: `I help in ${client.guilds.cache.size} servers! || Made with love by sweqtyy#0001 <3`, type: "STREAMING" }, status: 'dnd' });
 client.setPresence(`Made with love by sweqtyy#0001. || I help in ${client.guilds.cache.size} servers!`);
 client.login(process.env.TOKEN);
 //nice
