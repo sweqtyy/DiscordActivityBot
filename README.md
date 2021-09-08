@@ -28,3 +28,40 @@ I do not mind if you remove my credits from the code, but please don't run aroun
 any bugs with the bot itself, should be reported to me, either the [issues](https://github.com/sweqtyy/BSIBOT/issues) tab or my discord, which is sweqtyy#0001.
 
 <3
+
+## How do I get the Voice Channel ID?
+
+To get the voice channel ID, click [here](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) to find out how! It's pretty easy.
+
+
+## What commands are avaliable to use?
+
+Prefix: -
+
+Commands:
+
+-yttogether (vc id here)
+
+-activity (vc id here) (game here)
+
+-credits
+
+-ping
+
+-------------------------------
+
+Games:
+ChessInThePark (Chess In The Park)
+
+ChessInTheParkDev (Chess In The Park: Public Beta)
+
+fishington (Fishington.io)
+
+youtube (YouTube Together, j use -yttogether for that)
+
+betrayal (Betrayal.io)
+
+poker (Poker Night)
+
+
+**YOU MUST USE THE FIRST NAME TO BE ABLE TO PLAY THE GAME**
