@@ -4,6 +4,9 @@ const fetch = require("node-fetch");
 const client = new Client();
 const PREFIX = "-";
 const BotOwnerID = "271387672986124289"
+function waiting() {
+console.log('waiting')
+}
 const ACTIVITIES = {
     "poker": {
         id: "755827207812677713", 
@@ -47,8 +50,9 @@ client.on("message", async message => {
     if (cmd === "credits") return message.channel.send(`credits go to <@271387672986124289> for coding the bot, and random ppl who helped find the way to use discord activities. <3`);
     if (cmd === "invite") return message.channel.send(`You may invite the bot using the link here:\nhttps://discord.com/oauth2/authorize?client_id=751195834468532296&permissions=240519605457&scope=bot`);
     if (cmd === "resetbot") {
-        if (message.author.id != "271387672986124289") {
+        if (message.author.id == 271387672986124289) {
              message.channel.send(`Resetting bot..`);
+            
             client.destroy().then(() => {
                 client.login(process.env.TOKEN)
                 console.log("Bot has successfully been restarted.")
