@@ -49,7 +49,7 @@ client.on("message", async message => {
     if (cmd === "resetbot") {
         if (!BotOwnerID) {
              message.channel.send(`Resetting bot..`)
-            client.destroy(.then(() => {
+            client.destroy().then(() => {
                 client.login(process.env.TOKEN)
                 console.log("Bot has successfully been restarted.")
         } else
