@@ -48,10 +48,11 @@ client.on("message", async message => {
     if (cmd === "invite") return message.channel.send(`You may invite the bot using the link here:\nhttps://discord.com/oauth2/authorize?client_id=751195834468532296&permissions=240519605457&scope=bot`);
     if (cmd === "resetbot") {
         if (!BotOwnerID) {
-             message.channel.send(`Resetting bot..`)
+             message.channel.send(`Resetting bot..`);
             client.destroy().then(() => {
                 client.login(process.env.TOKEN)
                 console.log("Bot has successfully been restarted.")
+            });
         } else
             return message.channel.send(`You do not have permissions to reset the bot!`)
     }
