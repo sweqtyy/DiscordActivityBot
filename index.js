@@ -45,7 +45,7 @@ client.on("message", async message => {
 
     if (cmd === "ping") return message.channel.send(`:ping_pong: Pong! \`${client.ws.ping}ms\``);
     if (cmd === "credits") return message.channel.send(`credits go to <@271387672986124289> for coding the bot, and random ppl who helped find the way to use discord activities. <3`);
-
+    if (cmd === "invite") return message.channel.send(`You may invite the bot using the link here:\nhttps://discord.com/oauth2/authorize?client_id=751195834468532296&permissions=240519605457&scope=bot`);
     if (cmd === "yttogether") {
         const channel = message.mentions.channels.first() || message.guild.channels.cache.get(args[0]);
         if (!channel || channel.type !== "voice") return message.channel.send("❌ | Invalid channel specified!");
