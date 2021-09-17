@@ -55,7 +55,7 @@ client.on("message", async message => {
             });
         } else {
              message.channel.send(`You do not have permissions to reset the bot!`)
-            console.log(`${!message.author.id} tried running reset command`)
+            console.log(`${message.author.id} tried running reset command`)
         }
     }
     if (cmd === "yttogether") {
