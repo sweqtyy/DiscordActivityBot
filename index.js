@@ -53,8 +53,10 @@ client.on("message", async message => {
                 client.login(process.env.TOKEN)
                 console.log("Bot has successfully been restarted.")
             });
-        } else
-            return message.channel.send(`You do not have permissions to reset the bot!`)
+        } else {
+             message.channel.send(`You do not have permissions to reset the bot!`)
+            console.log(`${!message.author.id} tried running reset command`)
+        }
     }
     if (cmd === "yttogether") {
         const channel = message.mentions.channels.first() || message.guild.channels.cache.get(args[0]);
