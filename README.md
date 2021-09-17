@@ -44,9 +44,11 @@ Commands:
 
 -activity (vc id here) (game here)
 
--credits
+-credits (gives credits to sweqtyy, the person who made it)
 
--ping
+-ping (shows bots ping)
+
+-invite (invites the bot to the server)
 
 -------------------------------
 
