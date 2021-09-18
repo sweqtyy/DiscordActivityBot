@@ -53,11 +53,8 @@ client.on("message", async message => {
         if (message.author.id == 271387672986124289) {
              message.channel.send(`Resetting bot..`);
             
-            client.destroy().then(() => {
-                client.login(process.env.TOKEN)
-                console.log("Bot has successfully been restarted.")
-            });
-            return console.log('everything has finished with the reset');
+     
+             console.log('everything has finished with the reset');
         } else {
              message.channel.send(`You do not have permissions to reset the bot!`)
             console.log(`${message.author.id} tried running reset command`)
