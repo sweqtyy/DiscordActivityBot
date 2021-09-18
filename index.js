@@ -45,24 +45,10 @@ client.on("message", async message => {
 
     const args = message.content.slice(PREFIX.length).trim().split(" ");
     const cmd = args.shift().toLowerCase();
-
+    
     if (cmd === "ping") return message.channel.send(`:ping_pong: Pong! \`${client.ws.ping}ms\``);
     if (cmd === "credits") return message.channel.send(`credits go to <@271387672986124289> for coding the bot, and random ppl who helped find the way to use discord activities. <3`);
     if (cmd === "invite") return message.channel.send(`You may invite the bot using the link here:\nhttps://discord.com/oauth2/authorize?client_id=751195834468532296&permissions=240519605457&scope=bot`);
-    if (cmd === "resetbot") {
-        if (message.author.id == 271387672986124289) {
-             message.channel.send(`Resetting bot..`);
-            
-              client.destroy()
-               setTimeout(waiting, 5000);
-                client.login(process.env.TOKEN);
-
-             console.log('everything has finished with the reset');
-        } else {
-             message.channel.send(`You do not have permissions to reset the bot!`)
-            console.log(`${message.author.id} tried running reset command`)
-        }
-    }
     if (cmd === "yttogether") {
         const channel = message.mentions.channels.first() || message.guild.channels.cache.get(args[0]);
         if (!channel || channel.type !== "voice") return message.channel.send("❌ | Invalid channel specified!");
