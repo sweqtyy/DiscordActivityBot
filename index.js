@@ -43,9 +43,10 @@ client.on("message", async message => {
 
     const args = message.content.slice(PREFIX.length).trim().split(" ");
     const cmd = args.shift().toLowerCase();
-    if (cmd === "meme) {
+    if (cmd === "meme") {
               let memefinder = await fetch('https://meme-api.herokuapp.com/gimme');
             message.channel.send(`${message.member}, here is your meme: ${memefinder.url}`)
+        console.log("Meme command was used, sent meme.")
         }
     if (cmd === "coinflip") {
         const number = Math.ceil(Math.random() * 2);
