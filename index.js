@@ -43,7 +43,15 @@ client.on("message", async message => {
 
     const args = message.content.slice(PREFIX.length).trim().split(" ");
     const cmd = args.shift().toLowerCase();
-    
+    if (cmd === "coinflip") {
+        const number = Math.floor(Math.Random() * 2);
+        if (number === 1) {
+            message.channel.send(` ${message.member}, the coin landed on: **HEADS**`);
+       
+            } else if (number === 2) {
+                            message.channel.send(` ${message.member}, the coin landed on: **TAILS**`);
+            }
+    }
     if (cmd === "ping") return message.channel.send(`:ping_pong: Pong! \`${client.ws.ping}ms\``);
     if (cmd === "credits") return message.channel.send(`credits go to <@271387672986124289> for coding the bot, and random ppl who helped find the way to use discord activities. <3`);
     if (cmd === "invite") return message.channel.send(`You may invite the bot using the link here:\nhttps://discord.com/oauth2/authorize?client_id=751195834468532296&permissions=240519605457&scope=bot`);
