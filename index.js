@@ -44,7 +44,7 @@ client.on("message", async message => {
     const args = message.content.slice(PREFIX.length).trim().split(" ");
     const cmd = args.shift().toLowerCase();
     if (cmd === "coinflip") {
-        const number = Math.floor(Math.random() * 2);
+        const number = Math.ceil(Math.random() * 2);
         console.log(` A coinflip was initiated, the number chosen was ${number}`)
         if (number === 1) {
             message.channel.send(` ${message.member}, the coin landed on: **HEADS**`);
