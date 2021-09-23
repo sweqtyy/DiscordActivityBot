@@ -50,6 +50,8 @@ Commands:
 
 -invite (invites the bot to the server)
 
+-coinflip (flips a coin, and tells you what in lands on)
+
 -------------------------------
 
 Games:
