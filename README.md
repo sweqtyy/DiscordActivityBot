@@ -1,4 +1,4 @@
-# Discord Activity Bot, The Private Voice Channel Activity Bot.
+# Discord Activity Bot , The Voice Channel Activity Bot.
 
 hey! i'm sweqtyy. this bot right here is an discord activity bot, that will get frequently updated. It contains every current Discord Voice Activity Game. It's a public bot for any server, but I don't mind if you use my code for your own use or if you wanna revamp the code. this bot wasn't made ALL by me, but i helped out in most of it and fixed and squashed any bugs that caused the bot to go down, or not work. This bot will also have some misc commands just for fun. None of these commands should be able to be abused, just for fun commands.
 
