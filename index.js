@@ -43,6 +43,11 @@ client.on("message", async message => {
 
     const args = message.content.slice(PREFIX.length).trim().split(" ");
     const cmd = args.shift().toLowerCase();
+    if (cmd === "dogpic") {
+    let dogpicfinder = await fetch('https://dog.ceo/api/breeds/image/random');
+    const dogpic = await dogpicfinder.json();
+        message.channel.send(`${message.member}, here is your dog picture!: ${dogpic.message}`)
+    }
     if (cmd === "meme") {
               let memefinder = await fetch('https://meme-api.herokuapp.com/gimme');
                 memefinder = await memefinder.json();
