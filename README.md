@@ -52,6 +52,8 @@ Commands:
 
 -coinflip (flips a coin, and tells you what in lands on)
 
+-meme (gives you a random reddit meme)
+
 -------------------------------
 
 Games:
