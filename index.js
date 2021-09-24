@@ -43,6 +43,11 @@ client.on("message", async message => {
 
     const args = message.content.slice(PREFIX.length).trim().split(" ");
     const cmd = args.shift().toLowerCase();
+    if (cmd === "catpic") {
+    let catpicfinder = await fetch('https://api.thecatapi.com/v1/images')
+    const catpic = await catpicfinder.json();
+        message.channel.send(`${message.member}, here is your cat picture!: ${catpic.url}`)
+    }
     if (cmd === "dogpic") {
     let dogpicfinder = await fetch('https://dog.ceo/api/breeds/image/random');
     const dogpic = await dogpicfinder.json();
