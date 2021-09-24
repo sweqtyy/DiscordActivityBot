@@ -45,6 +45,8 @@ client.on("message", async message => {
     const cmd = args.shift().toLowerCase();
     if (cmd === "meme") {
               let memefinder = await fetch('https://meme-api.herokuapp.com/gimme');
+                memefinder = await memefinder.json();
+        
             message.channel.send(`${message.member}, here is your meme: ${memefinder.url}`)
         console.log("Meme command was used, sent meme.")
         }
