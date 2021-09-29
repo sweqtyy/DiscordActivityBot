@@ -1,4 +1,12 @@
-# Discord Activity Bot , The Voice Channel Activity Bot.
+<h1 align="center">
+  <br>
+  <a href="https://github.com/sabattle/CalypsoBot"><img src="https://user-images.githubusercontent.com/58605906/135195801-36181fdc-080b-417e-8f25-497b0b5662dc.gif"></a>
+  <br>
+	 Discord Activity Bot , The Voice Channel Activity Bot.
+
+  <br>
+</h1>
+
 
 hey! i'm sweqtyy. this bot right here is an discord activity bot, that will get frequently updated. It contains every current Discord Voice Activity Game. It's a public bot for any server, but I don't mind if you use my code for your own use or if you wanna revamp the code. this bot wasn't made ALL by me, but i helped out in most of it and fixed and squashed any bugs that caused the bot to go down, or not work. This bot will also have some misc commands just for fun. None of these commands should be able to be abused, just for fun commands.
 
