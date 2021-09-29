@@ -44,16 +44,16 @@ client.on("message", async message => {
     const args = message.content.slice(PREFIX.length).trim().split(" ");
     const cmd = args.shift().toLowerCase();
     if (cmd === "catpic") {
-const apikey = 'bacd081d-3413-41e7-bf87-c26a71dd76d6'
+const apikey = "bacd081d-3413-41e7-bf87-c26a71dd76d6"
 
-      const catpicfinder = await fetch('https://api.thecatapi.com/v1/images', { headers: { 'x-api-key': apikey }});
-    const catpic = await catpicfinder.json();
+      const catpicfinder = await fetch('https://api.thecatapi.com/v1/images/search', { headers: { 'x-api-key': apikey }});
+    const catpic = (await res.json())[0].url;;
         message.channel.send(`${message.member}, here is your cat picture!: ${catpic}`)
     }
     if (cmd === "dogpic") {
     let dogpicfinder = await fetch('https://dog.ceo/api/breeds/image/random');
-    const dogpic = (await res.json())[0].url
-        message.channel.send(`${message.member}, here is your dog picture!: ${dogpic.message}`)
+    const dogpic = (await res.json()).message;
+        message.channel.send(`${message.member}, here is your dog picture!: ${dogpic}`)
     }
     if (cmd === "meme") {
               let memefinder = await fetch('https://meme-api.herokuapp.com/gimme');
