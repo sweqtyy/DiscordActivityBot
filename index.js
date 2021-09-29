@@ -56,7 +56,7 @@ const apikey = "bacd081d-3413-41e7-bf87-c26a71dd76d6"
         const embed = new MessageEmbed()
         .setImage(dogpic)
         .setFooter('Made by love by dull#0003 <3')
-        message.channel.send(embed)
+        message.channel.send(`${message.member}, here is your cat picture!: ${dogpic}`)
     }
     if (cmd === "meme") {
               let memefinder = await fetch('https://meme-api.herokuapp.com/gimme');
