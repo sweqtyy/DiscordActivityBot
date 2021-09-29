@@ -67,7 +67,7 @@ ChessInTheParkDev (Chess In The Park: Public Beta)
 
 fishington (Fishington.io)
 
-youtube (YouTube Together, j use -yttogether for that)
+youtube (YouTube Together, just use -yttogether for that)
 
 betrayal (Betrayal.io)
 
