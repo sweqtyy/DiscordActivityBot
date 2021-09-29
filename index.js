@@ -44,7 +44,8 @@ client.on("message", async message => {
     const args = message.content.slice(PREFIX.length).trim().split(" ");
     const cmd = args.shift().toLowerCase();
     if (cmd === "catpic") {
-const apikey = bacd081d-3413-41e7-bf87-c26a71dd76d6        
+const apikey = 'bacd081d-3413-41e7-bf87-c26a71dd76d6'
+
       const catpicfinder = await fetch('https://api.thecatapi.com/v1/images', { headers: { 'x-api-key': apikey }});
     const catpic = await catpicfinder.json();
         message.channel.send(`${message.member}, here is your cat picture!: ${catpic.url}`)
