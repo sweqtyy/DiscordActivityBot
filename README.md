@@ -54,6 +54,10 @@ Commands:
 
 -meme (gives you a random reddit meme)
 
+-catpic (sends random cat pic)
+
+-dogpic (send random dog pic)
+
 -------------------------------
 
 Games:
