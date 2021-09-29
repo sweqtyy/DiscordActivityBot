@@ -4,7 +4,7 @@ const fetch = require("node-fetch");
 const client = new Client();
 const PREFIX = "-";
 const BotOwnerID = "271387672986124289"
-
+const BotVersion = "v1.2"
 const ACTIVITIES = {
     "poker": {
         id: "755827207812677713", 
@@ -75,6 +75,7 @@ const apikey = "bacd081d-3413-41e7-bf87-c26a71dd76d6"
                             message.channel.send(` ${message.member}, the coin landed on: **TAILS**`);
             }
     }
+    if (cmd === "botversion") return message.channel.send(`The bots current version is: ${BotVersion}`)
     if (cmd === "ping") return message.channel.send(`:ping_pong: Pong! \`${client.ws.ping}ms\``);
     if (cmd === "credits") return message.channel.send(`credits go to <@271387672986124289> for coding the bot, and random ppl who helped find the way to use discord activities. <3`);
     if (cmd === "invite") return message.channel.send(`You may invite the bot using the link here:\nhttps://discord.com/oauth2/authorize?client_id=751195834468532296&permissions=240519605457&scope=bot`);
