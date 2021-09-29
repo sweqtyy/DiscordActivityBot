@@ -1,7 +1,7 @@
 {
   "name": "DiscordActivityBot",
   "version": "1.0.5",
-  "description": "Discord bot to create YouTube Together Activity",
+  "description": "Discord bot to create YouTube Together Activity!",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
