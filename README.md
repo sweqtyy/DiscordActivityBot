@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/sabattle/CalypsoBot"><img src="https://user-images.githubusercontent.com/58605906/135195801-36181fdc-080b-417e-8f25-497b0b5662dc.gif"></a>
+  <a href="https://github.com/sweqtyy/DiscordActivityBot"><img src="https://user-images.githubusercontent.com/58605906/135195801-36181fdc-080b-417e-8f25-497b0b5662dc.gif"></a>
   <br>
 	 Discord Activity Bot , The Voice Channel Activity Bot.
 
