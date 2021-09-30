@@ -62,6 +62,9 @@ const apikey = "bacd081d-3413-41e7-bf87-c26a71dd76d6"
     const catpic = (await catpicfinder.json())[0].url;
         message.channel.send(`${message.member}, here is your cat picture!: ${catpic}`)
     }
+    if (cmd === "help") {
+        message.channel.send(`Prefix: ${PREFIX}\n\n Commands: ${Object.keys(ACTIVITIES).map(m => `- **${PREFIX}activity <Channel_ID> ${m}**`).join("\n")}\n Misc Commands: **-coinflip**\n **-meme**\n **-catpic**\n **-dogpic** `)
+    }
     if (cmd === "dogpic") {
     let dogpicfinder = await fetch('https://dog.ceo/api/breeds/image/random');
     const dogpic = (await dogpicfinder.json()).message;
