@@ -30,17 +30,17 @@ const ACTIVITIES = {
     id: "832012586023256104",
     name: "ChessInTheParkDev"
     },
-    "LetterTile": {
+    "lettertile": {
         id: "879863686565621790",
-        name: "LetterTile"
+        name: "lettertile"
     },
-    "WordSnack": {
+    "wordsnack": {
         id: "879863976006127627",
-        name: "WordSnack"
+        name: "wordsnack"
     },
-    "DoodleCrew": {
+    "doodlecrew": {
         id: "878067389634314250",
-        name: "DoodleCrew"
+        name: "doodlecrew"
     }
 };
 
