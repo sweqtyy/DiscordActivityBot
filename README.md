@@ -66,6 +66,7 @@ Commands:
 
 -dogpic (send random dog pic)
 
+-help (shows all commands that are currently made)
 -------------------------------
 
 Games:
