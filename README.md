@@ -81,5 +81,12 @@ betrayal (Betrayal.io)
 
 poker (Poker Night)
 
+lettertile (Letter Tile)
+
+wordsnack (Word Snack)
+
+doodlecrew (Doodle Crew)
+
+-------------------------------
 
 **YOU MUST USE THE FIRST NAME TO BE ABLE TO PLAY THE GAME**
