@@ -4,7 +4,7 @@ const fetch = require("node-fetch");
 const client = new Client();
 const PREFIX = "-";
 const BotOwnerID = "271387672986124289"
-const BotVersion = "v1.2"
+const BotVersion = "v1.3"
 const ACTIVITIES = {
     "poker": {
         id: "755827207812677713", 
