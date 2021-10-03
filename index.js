@@ -167,7 +167,7 @@ setInterval(() => {
     const randomIndex = Math.floor(Math.random() * (statuses.length - 1) + 1);
     const newActivity = statuses[randomIndex];
 
-    client.user.setPresence({ activities: [{ name: newActivity }], status: 'dnd' });
+    client.user.setPresence({ activities: [{ name: 'just a test' }], status: 'dnd' });
 
 }, 10000);
 
