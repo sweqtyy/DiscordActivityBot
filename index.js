@@ -1,4 +1,4 @@
-//nicec
+
 const { Client } = require("discord.js"); //Allows me to not have files on files for discordjs
 const fetch = require("node-fetch");
 const client = new Client();
@@ -69,9 +69,8 @@ const apikey = "bacd081d-3413-41e7-bf87-c26a71dd76d6"
     let dogpicfinder = await fetch('https://dog.ceo/api/breeds/image/random');
     const dogpic = (await dogpicfinder.json()).message;
         const embed = new MessageEmbed()
-        .setImage(dogpic)
         .setFooter('Made by love by dull#0003 <3')
-        message.channel.send(`${message.member}, here is your cat picture!: ${dogpic}`)
+        message.channel.send(`${message.member}, here is your dog picture!: ${dogpic}`)
     }
     if (cmd === "meme") {
               let memefinder = await fetch('https://meme-api.herokuapp.com/gimme');
@@ -161,4 +160,3 @@ const apikey = "bacd081d-3413-41e7-bf87-c26a71dd76d6"
 client.on("ready", () => client.user.setStatus('idle'))
 client.on("ready", () => client.user.setActivity(`I help in ${client.guilds.cache.size} servers! || Made with love by sweqtyy#0001 <3`))
 client.login(process.env.TOKEN);
-//nice :P
