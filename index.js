@@ -154,8 +154,6 @@ const apikey = "bacd081d-3413-41e7-bf87-c26a71dd76d6"
             })
     }
 });
-//I help in ${client.guilds.cache.size} servers! || Made with love by sweqtyy#0001 <3
-client.on("ready", () => client.user.setStatus('idle'))
 
 const statuses = [ //The reason this is down here, is because we cannot use client before it's loaded.
     `I help in ${client.guilds.cache.size} servers!`,
