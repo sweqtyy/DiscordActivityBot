@@ -68,8 +68,6 @@ const apikey = "bacd081d-3413-41e7-bf87-c26a71dd76d6"
     if (cmd === "dogpic") {
     let dogpicfinder = await fetch('https://dog.ceo/api/breeds/image/random');
     const dogpic = (await dogpicfinder.json()).message;
-        const embed = new MessageEmbed()
-        .setFooter('Made by love by dull#0003 <3')
         message.channel.send(`${message.member}, here is your dog picture!: ${dogpic}`)
     }
     if (cmd === "meme") {
