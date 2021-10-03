@@ -156,7 +156,8 @@ const apikey = "bacd081d-3413-41e7-bf87-c26a71dd76d6"
 });
 //I help in ${client.guilds.cache.size} servers! || Made with love by sweqtyy#0001 <3
 client.on("ready", () => client.user.setStatus('idle'))
-const statuses = [
+
+const statuses = [ //The reason this is down here, is because we cannot use client before it's loaded.
     `I help in ${client.guilds.cache.size} servers!`,
     `This bot was made by dull#0003!`,
     `The bots current version is: ${BotVersion}`,
@@ -167,6 +168,8 @@ client.on("ready", () => {
 setInterval(() => {
     const randomIndex = Math.floor(Math.random() * (statuses.length - 1) + 1);
     const newActivity = statuses[randomIndex];
+
+    client.user.SetActivity(newActivity)
 }, 10000);
 
 });
