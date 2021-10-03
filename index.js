@@ -1,4 +1,10 @@
-
+const statuses = [
+    `I help in ${client.guilds.cache.size} servers!`,
+    `This bot was made by dull#0003!`,
+    `The bots current version is: ${BotVersion}`,
+    "Invite me to your server using the url in my about me! <3"
+  ];
+  
 const { Client } = require("discord.js"); //Allows me to not have files on files for discordjs
 const fetch = require("node-fetch");
 const client = new Client();
@@ -156,5 +162,11 @@ const apikey = "bacd081d-3413-41e7-bf87-c26a71dd76d6"
 });
 //I help in ${client.guilds.cache.size} servers! || Made with love by sweqtyy#0001 <3
 client.on("ready", () => client.user.setStatus('idle'))
-client.on("ready", () => client.user.setActivity(`I help in ${client.guilds.cache.size} servers! || Made with love by sweqtyy#0001 <3`))
+client.on("ready", () => {
+setInterval(() => {
+    const randomIndex = Math.floor(Math.random() * (statuses.length - 1) + 1);
+    const newActivity = statuses[randomIndex];
+}, 120000);
+
+});
 client.login(process.env.TOKEN);
