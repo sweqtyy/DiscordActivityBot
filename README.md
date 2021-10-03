@@ -67,6 +67,8 @@ Commands:
 -dogpic (send random dog pic)
 
 -help (shows all commands that are currently made)
+
+-servercount (shows the # of server the bot is in)
 -------------------------------
 
 Games:

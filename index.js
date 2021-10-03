@@ -55,6 +55,7 @@ client.on("message", async message => {
 
     const args = message.content.slice(PREFIX.length).trim().split(" ");
     const cmd = args.shift().toLowerCase();
+    if (cmd === "servercount") return(`I am currently in **${client.guilds.cache.size} servers!`)
     if (cmd === "catpic") {
 const apikey = "bacd081d-3413-41e7-bf87-c26a71dd76d6"
 
@@ -63,7 +64,7 @@ const apikey = "bacd081d-3413-41e7-bf87-c26a71dd76d6"
         message.channel.send(`${message.member}, here is your cat picture!: ${catpic}`)
     }
     if (cmd === "help") {
-        message.channel.send(`Prefix: ${PREFIX}\n\n Commands:\n\n ${Object.keys(ACTIVITIES).map(m => `**${PREFIX}activity <Channel_ID> ${m}**`).join("\n")}\n\n Misc Commands:\n\n **-coinflip**\n **-meme**\n **-catpic**\n **-dogpic** `)
+        message.channel.send(`Prefix: ${PREFIX}\n\n Commands:\n\n ${Object.keys(ACTIVITIES).map(m => `**${PREFIX}activity <Channel_ID> ${m}**`).join("\n")}\n\n Misc Commands:\n\n **-coinflip**\n **-meme**\n **-catpic**\n **-dogpic**\n**-servercount**`)
     }
     if (cmd === "dogpic") {
     let dogpicfinder = await fetch('https://dog.ceo/api/breeds/image/random');
