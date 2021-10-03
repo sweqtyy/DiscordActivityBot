@@ -172,7 +172,7 @@ setInterval(() => {
     client.user.setStatus('dnd');
     client.user.setActivity(newActivity)
 
-}, 10000);
+}, 30000);
 
 });
 client.login(process.env.TOKEN);
