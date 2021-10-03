@@ -169,7 +169,7 @@ setInterval(() => {
     const randomIndex = Math.floor(Math.random() * (statuses.length - 1) + 1);
     const newActivity = statuses[randomIndex];
 
-    client.user.SetActivity(newActivity)
+    client.user.setActivity(newActivity)
 }, 10000);
 
 });
