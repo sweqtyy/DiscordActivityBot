@@ -55,7 +55,7 @@ client.on("message", async message => {
 
     const args = message.content.slice(PREFIX.length).trim().split(" ");
     const cmd = args.shift().toLowerCase();
-    if (cmd === "servercount") return(`I am currently in **${client.guilds.cache.size} servers!`)
+    if (cmd === "servercount") return (`I am currently in **${client.guilds.cache.size}** servers!`);
     if (cmd === "catpic") {
 const apikey = "bacd081d-3413-41e7-bf87-c26a71dd76d6"
 
