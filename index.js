@@ -95,7 +95,7 @@ const apikey = "bacd081d-3413-41e7-bf87-c26a71dd76d6"
     if (cmd === "ping") return message.channel.send(`:ping_pong: Pong! \`${client.ws.ping}ms\``);
     if (cmd === "credits") return message.channel.send(`credits go to <@271387672986124289> for coding the bot, and random ppl who helped find the way to use discord activities. <3`);
     if (cmd === "invite") return message.channel.send(`You may invite the bot using the link here:\nhttps://discord.com/oauth2/authorize?client_id=751195834468532296&permissions=240519605457&scope=bot`);
-    if (cmd === "yttogether") {
+    if (cmd === "watchtogether") {
         const channel = message.mentions.channels.first() || message.guild.channels.cache.get(args[0]);
         if (!channel || channel.type !== "voice") return message.channel.send("❌ | Invalid channel specified!");
         if (!channel.permissionsFor(message.guild.me).has("CREATE_INSTANT_INVITE")) return message.channel.send("❌ | I need `CREATE INSTANT INVITE` permission to work properly!");
@@ -105,7 +105,7 @@ const apikey = "bacd081d-3413-41e7-bf87-c26a71dd76d6"
             body: JSON.stringify({
                 max_age: 86400,
                 max_uses: 0,
-                target_application_id: "755600276941176913", // youtube together
+                target_application_id: "880218394199220334", // youtube together
                 target_type: 2,
                 temporary: false,
                 validate: null
