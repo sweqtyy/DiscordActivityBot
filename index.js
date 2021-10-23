@@ -6,6 +6,10 @@ const PREFIX = "-";
 const BotOwnerID = "271387672986124289"
 const BotVersion = "v1.4"
 const ACTIVITIES = {
+    "testact": {
+    id: 880218394199220334,
+    name: "Test"
+    },
     "poker": {
         id: "755827207812677713", 
         name: "Poker Night"
