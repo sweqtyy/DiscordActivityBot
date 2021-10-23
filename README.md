@@ -48,7 +48,7 @@ Prefix: -
 
 Commands:
 
--yttogether (vc id here)
+-watchtogether (vc id here)
 
 -activity (vc id here) (game here)
 
@@ -80,7 +80,7 @@ ChessInTheParkDev (Chess In The Park: Public Beta)
 
 fishington (Fishington.io)
 
-youtube (YouTube Together, just use -yttogether for that)
+youtube (Watch Together, just use -watchtogether for that)
 
 betrayal (Betrayal.io)
 
