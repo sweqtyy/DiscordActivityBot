@@ -33,7 +33,7 @@ Discord Bot Activities is in BETA, meaning there is bugs, and much more stuff yo
 
 I do not mind if you remove my credits from the code, but please don't run around saying this code is yours. it's not, and it's barely mine. I just rewrote some stuff and messed around and put it into heroku.
 
-any bugs with the bot itself, should be reported to me, either the [issues](https://github.com/sweqtyy/BSIBOT/issues) tab or my discord, which is sweqtyy#0001.
+any bugs with the bot itself, should be reported to me, either the [issues](https://github.com/sweqtyy/BSIBOT/issues) tab or my discord, which is dull#0003.
 
 <3
 
