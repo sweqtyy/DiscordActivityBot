@@ -42,7 +42,24 @@ const ACTIVITIES = {
     "doodlecrew": {
         id: "878067389634314250",
         name: "doodlecrew"
-    }
+    },
+   "spellcast": {
+   id: "852509694341283871",
+   name: "spellcast"
+},
+   "awkword": {
+   id: "879863881349087252",
+   name: "awkword"
+   },
+    "checkers": {
+   id: "832013003968348200",
+   name: "checkers"
+   },
+   //    new games template
+    //   "gamename": {
+   //    id: "id",
+  //       name: "gamename"
+   //      },
 };
 
 
