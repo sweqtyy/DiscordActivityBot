@@ -92,6 +92,12 @@ wordsnack (Word Snack)
 
 doodlecrew (Doodle Crew)
 
+spellcast (Spell Cast)
+
+awkword (Awkord)
+
+checkers (Checkers)
+
 -------------------------------
 
 **YOU MUST USE THE FIRST NAME TO BE ABLE TO PLAY THE GAME**
