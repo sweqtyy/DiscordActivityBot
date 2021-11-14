@@ -1,5 +1,5 @@
 
-const { Client } = require("discord.js"); //Allows me to not have files on files for discordjs
+const { Client } = require("discord.js");
 const fetch = require("node-fetch");
 const client = new Client();
 const PREFIX = "-";
