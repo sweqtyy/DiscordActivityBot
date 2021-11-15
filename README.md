@@ -37,6 +37,8 @@ any bugs with the bot itself, should be reported to me, either the [issues](http
 
 <3
 
+There soon will be a revamp for the code, to make it look better, and make the code more efficent and upto date, with embeds, and much more. I don't have an ETA since I do not want to rush this update since it will take time.
+
 ## How do I get the Voice Channel ID?
 
 To get the voice channel ID, click [here](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) to find out how! It's pretty easy.
