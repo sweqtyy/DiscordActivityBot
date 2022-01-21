@@ -109,6 +109,7 @@ const apikey = "bacd081d-3413-41e7-bf87-c26a71dd76d6"
             }
     }
     if (cmd === "botversion") return message.channel.send(`The bots current version is: ${BotVersion}`)
+   if (cmd === "support") return message.channel.send('Need support, or want to report a bug? Here is the server: https://discord.gg/MCXSfTh22W')
     if (cmd === "ping") return message.channel.send(`:ping_pong: Pong! \`${client.ws.ping}ms\``);
     if (cmd === "credits") return message.channel.send(`credits go to <@271387672986124289> for coding the bot, and random ppl who helped find the way to use discord activities. <3`);
     if (cmd === "invite") return message.channel.send(`You may invite the bot using the link here:\nhttps://discord.com/oauth2/authorize?client_id=751195834468532296&permissions=240519605457&scope=bot`);
