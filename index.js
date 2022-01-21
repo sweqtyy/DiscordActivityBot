@@ -31,17 +31,17 @@ const ACTIVITIES = {
     id: "832012586023256104",
     name: "ChessInTheParkDev"
     },
-    "lettertile": {
+    "letterleague": {
         id: "879863686565621790",
-        name: "lettertile"
+        name: "letterleague"
     },
     "wordsnack": {
         id: "879863976006127627",
         name: "wordsnack"
     },
-    "doodlecrew": {
+    "sketchheads": {
         id: "878067389634314250",
-        name: "doodlecrew"
+        name: "sketchheads"
     },
    "spellcast": {
    id: "852509694341283871",
