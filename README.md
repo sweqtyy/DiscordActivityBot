@@ -72,6 +72,8 @@ Commands:
 
 -servercount (shows the # of server the bot is in)
 
+-support (invites you to support server)
+
 
 -------------------------------
 
