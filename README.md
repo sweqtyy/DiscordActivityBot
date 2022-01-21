@@ -88,11 +88,11 @@ betrayal (Betrayal.io)
 
 poker (Poker Night)
 
-lettertile (Letter Tile)
+letterleague (Letter League)
 
 wordsnack (Word Snack)
 
-doodlecrew (Doodle Crew)
+sketchheads (Sketch Heads)
 
 spellcast (Spell Cast)
 
