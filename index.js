@@ -55,7 +55,11 @@ const ACTIVITIES = {
    id: "832013003968348200",
    name: "checkers"
    },
-   //    new games template
+    "ocho": {
+      id: "832025144389533716",
+     name: "ocho"
+     },
+    //    new games template
     //   "gamename": {
    //    id: "id",
   //       name: "gamename"
